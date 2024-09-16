@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginStart="7dp"
+        />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:text="from"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        android:layout_marginStart="7dp"
+        />
+
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="65dp"
+        android:layout_height="21dp"
+        android:text="YouTube"
+        android:textColor="#0000ff"
+        app:layout_constraintStart_toEndOf="@+id/from"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        />
+
+    <TextView
+        android:id="@+id/views"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:text="views"
+        app:layout_constraintStart_toEndOf="@+id/what"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        />
+
+    <TextView
+        android:id="@+id/textmain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="19dp"
+        android:text="Text3 Text3 Text3 Text3 Text3 Text3 Text3 Text3 Text3"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+        />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/imageboys"
+        app:layout_constraintTop_toBottomOf="@+id/textmain"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        />
+
+  <TextView
+      android:id="@+id/tag1"
+      android:layout_width="70dp"
+      android:layout_height="25dp"
+      app:layout_constraintTop_toBottomOf="@+id/image2"
+      app:layout_constraintStart_toStartOf="parent"
+      android:text="Tag"
+      android:textSize="15dp"
+      android:layout_marginStart="19dp"
+      />
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toEndOf="@+id/tag1"
+        android:text="Tag2"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tag3"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toEndOf="@+id/tag2"
+        android:text="Tag2"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tag4"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toEndOf="@+id/tag3"
+        android:text="Tag2"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toEndOf="@+id/tag4"
+        android:layout_marginTop="-8dp"
+        android:layout_marginStart="-10dp"
+        android:text="-->"
+        android:textColor="@color/black"/>
+    
+    <Button
+        android:id="@+id/buttonlike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tag1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:text="L"
+        />
+    <TextView
+        android:id="@+id/textlike"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tag1"
+        app:layout_constraintStart_toEndOf="@+id/buttonlike"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="1234"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/buttonrepost"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tag1"
+        app:layout_constraintStart_toEndOf="@+id/textlike"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:text="L"
+        />
+    <TextView
+        android:id="@+id/textrepsot"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tag1"
+        app:layout_constraintStart_toEndOf="@+id/buttonrepost"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="9999"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/buttonshare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tag1"
+        app:layout_constraintStart_toEndOf="@+id/textrepsot"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:text="L"
+        />
+
+    <Button
+        android:id="@+id/dop"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/buttonlike"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
